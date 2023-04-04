@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public interface ICombine {
+package Interface;
+
+public interface IMix {
+
+    String mixIngredients();
 }

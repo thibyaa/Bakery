@@ -2,15 +2,21 @@ public abstract class BakeryProduct {
 
     String name;
     double price;
-    int numberOfEggs;
 
-    public BakeryProduct(String name, double price, int numberOfEggs){
+
+    public BakeryProduct(String name, double price){
         this.name = name;
         this.price = price;
-        this.numberOfEggs = numberOfEggs;
     }
 
-    public boolean bake(){
-        return true;
+    public String bake(){
+        return "Bake for 30 minutes";
+    }
+
+    public String bake(int time){
+        return "Bake for " + time + " minutes" ;
     }
 }
+
+//things to add:
+//interface using implements

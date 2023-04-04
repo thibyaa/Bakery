@@ -1,4 +1,6 @@
-public class ChocolateCake extends Cake {
+import Interface.IMix;
+
+public class ChocolateCake extends Cake implements IMix {
 
     int cocoaPowder;
     public ChocolateCake(String name, double price, int numberOfEggs, int numberOfLayers, String baseFlavour, String shape, int cocoaPowder){
@@ -8,5 +10,13 @@ public class ChocolateCake extends Cake {
 
     public String addChocolateChips(){
         return "Yay, diabetes";
+    }
+
+    public String combineLayers(){
+        return "Layers combined with Chocolate ButterCream";
+    }
+
+    public String mixIngredients(){
+        return this.cocoaPowder + " cups of Cocoa powder was mixed with flour";
     }
 }

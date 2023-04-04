@@ -14,4 +14,14 @@ public class ChocolateCakeTest {
     public void canAddChocolateChips(){
         assertThat(chocolateCake.addChocolateChips()).isEqualTo("Yay, diabetes");
     }
+
+    @Test
+    public void canBake(){
+        assertThat(chocolateCake.bake(45)).isEqualTo("Bake for 45 minutes");
+    }
+
+    @Test
+    public void canMixIngredients(){
+        assertThat(chocolateCake.mixIngredients()).isEqualTo("4 cups of Cocoa powder was mixed with flour");
+    }
 }
